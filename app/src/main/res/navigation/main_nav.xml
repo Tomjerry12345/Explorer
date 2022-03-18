@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.explorer.ui.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_identifikasiFragment"
+            app:destination="@id/identifikasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/identifikasiFragment"
+        android:name="com.explorer.ui.main.identifkasi.IdentifikasiFragment"
+        android:label="Identifikasi"
+        tools:layout="@layout/identifikasi_fragment" />
+</navigation>
