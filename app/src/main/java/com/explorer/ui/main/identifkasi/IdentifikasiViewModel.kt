@@ -40,7 +40,7 @@ class IdentifikasiViewModel : ViewModel() {
         this.context = context
         var result = ""
         try {
-            result = runModel(context, image, imageSize)
+//            result = runModel(context, image, imageSize)
             testModel(image)
         } catch (e: IOException) {
             showLogAssert("error", "${e.message}")
